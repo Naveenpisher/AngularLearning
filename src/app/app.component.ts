@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LearningProject1';
+  description: 'This project about angular';
 }
