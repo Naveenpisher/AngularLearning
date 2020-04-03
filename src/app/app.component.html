@@ -1,4 +1,21 @@
+<header>
+    <mat-card class="d-flex align-items-center justify-content-center">
+        <div class="text-left">
+            <a href="/">
+                <img style="max-width: 100px !important;max-height: 100px;" src="../assets/Images/simple-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="ml-auto">
+            <button class="btn btn-info mr-1" [routerLink]="['/user/login']">Login</button>
+            <button class="btn btn-light" [routerLink]="['/user/register']">Register</button>
+        </div>
+    </mat-card>
+</header>
 
-<h1>{{title}}</h1>
-<p>{{description}}</p>
-<router-outlet></router-outlet>
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="app-footer bg-info py-3">
+    <div class="text-center text-light">@ {{currentDate}} All rights reserved by NaveenPisher</div>
+</footer>
